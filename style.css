@@ -1,0 +1,204 @@
+body{
+    background: url(images/fon.jpg);
+    margin: 20px auto;
+    height: auto;
+    width: 1000px;
+    font-size: 18px;
+}
+.logoNavigator{
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-end;
+ background: #597da3
+}
+                                                         /* Логотип */
+.logo{
+    width: auto;
+}
+.logo a img{
+    width: 100px;
+    height: auto;
+    margin: 0;
+    padding: auto;
+    text-align: left;
+}
+
+                                                        /* Навигация */
+
+.navigation ul{
+    margin: 0;
+    padding: 0 10px 30px 0;
+    list-style: none;
+}
+.navigation ul li{
+    float: right;
+}
+.navigation a{
+    color: white;
+    text-decoration: none;
+}
+.navigation li a:hover{
+    background:#5072a7;
+    box-shadow: 1px 5px 10px -5px; 
+    }
+    .navigation a {
+        display: inline-block;
+        line-height: 1;
+        text-decoration: none;
+        cursor: pointer;
+        position: relative
+    }
+    .navigation a:after {
+        background-color: #ff6000;
+        display: block;
+        content: "";
+        height: 3px;
+        left: 50%;
+        width: 0%;
+        position: absolute;
+        -webkit-transition: width .3s ease-in-out;
+        -moz--transition: width .3s ease-in-out;
+        transition: width .3s ease-in-out;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        transform: translateX(-50%)
+    }
+    .navigation a:hover:after,
+    .navigation a:focus:after {
+        width: 100%;
+    }
+                                                         /* Социальные сети */
+
+.social_grup{
+width: 220px;
+}    
+.social_grup {
+    float: right;
+}
+.social a {
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    float: left;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius: 36px;
+    margin: 0 10px 10px 0;
+    padding: 6px;
+    color: #000;
+}
+.youtube a:hover {background: #c4302b; color: #fff;}
+.twitter a:hover {background: #00acee; color: #fff;}
+.facebook a:hover {background: #3b5998; color: #fff;}
+.whatsapp a:hover {background: #50b154; color: #fff;}
+.google-pluse a:hover {background: #DD4B39; color: #fff;}
+
+
+                                                             /* Подразделы */
+.section ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.section ul li{
+    float: left;
+    margin: 0;
+    padding: 0;
+    width:200px;
+    height:auto;
+    background-color:#4d3319;
+    line-height: 30px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 2px;
+}
+
+.section ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.section_drop a{
+    background:#413F3C;
+    }
+.section__drop a{
+    background: white;
+}
+
+ul.section__drop li a{
+    color: black;
+}
+.section_drop .section__drop li a:hover{
+    color: #ffb366;
+    transition: 0.2S ease;
+}
+li.section_drop a:hover {color: #ddbe86;}
+.section ul li ul li{
+    display: none;
+}
+.section ul li:hover ul li{
+    display: block
+}
+
+
+                                            /* Создание слайдера на чистом CSS */
+.slider_container{
+    position: absolute;
+    max-width: 800px;
+    margin: 250px 0 0 0 ;
+    padding:0;
+    display: flex;
+    align-items: center;
+}
+.sliders{
+    display: flex;
+    justify-content:center;
+    margin-top: auto;
+    padding-top: 0;
+}
+ul.sliders li{
+    width: 200px;
+    overflow: hidden;
+    padding: 1px 1px 0;
+    cursor: pointer;
+    display: block;
+    box-shadow: 1px 3px 15px #7e807e;
+    transition: 1.2s;
+}
+.sliders li img{
+    width: 500px;
+}
+                                                        /* Анимация слайдера */
+        /* hover при наведении курсора */
+ul.sliders li:hover{
+    width: 500px;
+   box-shadow: 1px 3px 15px #36c5fa;
+   transition: 1s;
+   display: block;
+}
+ul.sliders li:nth-child(2){
+    width: 500px;
+}
+ul.sliders:hover li:nth-child(2){
+    width: 100px;
+}
+ul.sliders li:nth-child(2):hover{
+    width: 500px;
+}
+
+                                                         /* Кнопка Button */
+
+.click{
+    position: absolute;
+    top:50%; 
+    left: 50%;
+    -webkit-transform: translate(50%-50%)
+    -moz-transform:translate(50%-50%)
+}
+.click .butt a{
+    color: #000;
+}
